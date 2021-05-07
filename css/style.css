@@ -19,7 +19,7 @@ p {
 }
 
 /* Width of Body Containers */
-.header-container, .first-section {
+.header-container, .first-section, .second-section {
     width: 1170px;
     margin: 0 auto;
 }
@@ -179,4 +179,33 @@ footer {
     font-size: 14px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Responsive */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+    .header-container, .first-section, .second-section {
+        width: 1140px;
+    }
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 992px) {
+    .header-container, .first-section, .second-section {
+        width: 960px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 768px) {
+    .header-container, .first-section, .second-section {
+        width: 720px;
+    }
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+
 }
