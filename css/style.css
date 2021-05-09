@@ -7,7 +7,7 @@ html {
 }
 
 /* Fonts */
-h1, h2, h3 {
+h1, h2, h3, .second-section-form-input {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
@@ -25,6 +25,30 @@ p {
     margin: 0 auto;
 }
 
+/* P */
+p {
+    margin: 0;
+}
+
+/* Text Align */
+/* Center */
+.header-dream-button, .first-section-header, .second-section, .expectation, .second-section-header, .credits {
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Display Flex*/
+.about-dream-container, .expectations {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Color */
+/* #fff - White Color */
+.header, .credits {
+    color: #fff;
+}
+
 /* Body */
 body {
     margin: 0;
@@ -40,9 +64,6 @@ body {
     background: -webkit-linear-gradient(left,  #4dbefe 0%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right,  #4dbefe 0%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbefe', endColorstr='#4096ee',GradientType=1 ); /* IE6-9 */
-
-    color: #fff;
-    padding: 75px 0 140px 0;
 }
 /* Header Container */
 .logo {
@@ -52,10 +73,8 @@ body {
 
 /* About Dream Container */
 .about-dream-container {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 145px 0 0 0;
+    margin: 10px 0 0 0;
 }
 /* About Dream */
 .about-dream-header {
@@ -78,8 +97,7 @@ body {
     background: #ffd429;
     color: #2e2a1b;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    text-decoration: none;
+    font-weight: 900;
     display: block;
     width: 225px;
     margin: 45px 0 0 0;
@@ -100,23 +118,21 @@ body {
 /* Article */
 /* First Section */
 .first-section-header {
-    text-align: center;
-    text-decoration: none;
     padding: 100px 0 0 0;
 }
 
 /* Expectations */
 .expectations {
-    display: flex;
-    justify-content: space-between;
-    margin: 75px 0 0 0;
+    padding: 0 100px;
 }
 
 .expectation {
     width: 285px;
-    text-align: center;
-    text-decoration: none;
     margin: 70px 0 115px 0;
+}
+
+.icon-clock {
+    width: 25%;
 }
 
 .expectation-header {
@@ -132,26 +148,22 @@ body {
 
 .second-section {
     background-color: #ecf3f8;
-    text-align: center;
-    text-decoration: none;
     padding: 0 0 100px 0;
 }
 
 .second-section-header {
-    text-align: center;
-    text-decoration: none;
     padding: 100px 0 60px 0;
 }
 
-input {
+.second-section-form-input {
     width: 350px;
     height: 50px;
     border: 1px solid #bbbbbb;
     border-radius: 2px;
-    font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     padding-left: 22px;
     margin: 15px auto;
+    font-size: 15px;
     display: block;
     
 }
@@ -165,14 +177,11 @@ input {
 /* Footer */
 footer {
     background-color: #164d7a;
-    padding: 31px 0 31px 0;
+    padding: 15px 0 15px 0;
 }
 
 .credits {
-    text-align: center;
-    text-decoration: none;
     font-size: 14px;
-    color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -181,27 +190,309 @@ footer {
 
 /* 992-1200px */
 @media screen and (max-width: 1200px) {
-    .header-container, .first-section-container, .second-section-container {
-        width: 1140px;
-    }
-}
-
-/* 992px - 1200px */
-@media screen and (max-width: 992px) {
+    /* Width of Body Containers */
     .header-container, .first-section-container, .second-section-container {
         width: 960px;
     }
-}
+
+    /* Fonts */
+    h1, h2, h3, .second-section-form-input {
+        font-size: 20px;
+    }
+    
+    /* About Dream */
+    .about-dream-header {
+        font-size: 27px;
+        width: auto;
+    }
+    .about-dream-span {
+        font-size: 49px;
+    }
+
+    .about-dream-paragraph {
+        
+    }
+
+    .about-dream-image {
+        width: 45%;
+        height: auto;
+        margin: 0;
+    }
+
+    
+    /* First Section */
+
+    /* Expectations */
+    .icon-clock {
+        width: 28%;
+    }
+
 
 /* 768px - 992px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+    /* Width of Body Containers */
     .header-container, .first-section-container, .second-section-container {
         width: 720px;
     }
+
+    /* About Dream Container */
+    .about-dream-container {
+    margin: 45px 0 0 0;
+    }
+    
+
+    /* About Dream */
+    .about-dream-header {
+        font-size: 27px;
+        width: auto;
+    }
+    .about-dream-span {
+        font-size: 49px;
+    }
+
+    .about-dream-image {
+        width: 340px;
+        height: auto;
+        margin-top: 0px;
+        padding-bottom: 90px;
+    }
+
+    .header-dream-button {
+        margin: 45px 0 45px 0;
+    }
+
+    
+    /* First Section */
+    .first-section-container {
+        padding: 30px 0 0 0;
+    }
+
+    .first-section-header {
+        padding: 0;
+    }
+
+    /* Expectations */
+    .expectations {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .expectation {
+        width: auto;
+        margin: 0;
+        text-align: left;
+    }
+
+    .expectation-header {
+        margin: 20px 0 0 0;
+    }
+
+    .icon-clock, .icon-beach {
+        width: 6%;
+    }
+    .icon-rocket {
+        width: 4%;
+    }
+    
+    .form-button-submit {
+        margin: 0 auto;
+    }
+
+    /* Second Section */
+
+    .second-section {
+        padding: 30px 0 30px 0;
+    }
+
+    .second-section-header {
+        padding: 0 0 30px 0;
+    }
+
+    .second-section-form-input {
+        font-size: 15px;
+    }
+    .form-button-submit {
+        font-size: 15px;
+    }
+
 }
 
-/* 0 - 576px */
-/* @media screen and (max-width: 576px) {
-    .header-container, .first-section-container, .second-section-container
+/* 576px - 768px*/
+@media screen and (max-width: 768px) {
+    /* Width of Body Containers */
+    .header-container, .first-section-container, .second-section-container {
+        width: 540px;
+    }
 
-} */
+    /* Fonts */
+    h1, h2, h3, .second-section-form-input {
+        font-size: 20px;
+    }
+
+    /* Body */
+    body {
+        font-size: 12px;
+    }
+
+    /* Header Container */
+    .logo {
+        margin: 25px 0 0 0;
+    }
+
+    /* About Dream */
+    .about-dream-header {
+        font-size: 17px;
+        width: 250px;
+    }
+    .about-dream-span {
+        font-size: 39px;
+    }
+
+    .about-dream-image {
+        width: 42%;
+        margin: 0 0 60px 0;
+        padding-bottom: 0;
+    }
+
+    .about-dream-paragraph {
+        font-size: 13px;
+        width: auto;
+        margin: 25px 0 0 0;
+    }
+
+    .header-dream-button {
+        margin: 20px 0 0 0;
+        width: 150px;
+        height: 30px;
+        padding: 5px 0 0 0;
+    }
+
+    
+    /* First Section */
+    
+    /* Expectations */
+    .expectation-header {
+         font-size: 15px;
+    }
+
+
+    /* Second Section */
+
+    .second-section-header {
+        padding: 0 0 30px 0;
+    }
+
+    .second-section-form-input {
+        width: 240px;
+        font-size: 12px;
+        padding-left: 7px;
+    }
+    .form-button-submit {
+        width: 240px;
+        height: 45px;
+        font-size: 12px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+    /* Footer */
+    footer {
+        padding: 8px 0 8px 0;
+    }
+
+    .credits {
+        font-size: 12px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    /* Width of Body Containers */
+    .header-container, .first-section-container, .second-section-container {
+        width: 90%;
+    }
+
+    /* Fonts */
+    h1, h2 {
+        font-size: 12px;
+    }
+
+    /* Body */
+    body {
+        font-size: 9px;
+    }
+
+    /* Header Container */
+    .logo {
+        margin: 15px 0 0 0;
+        width: 20%;
+    }
+
+    /* About Dream Container */
+    .about-dream-container {
+        margin: 35px 0 0 0;
+    }
+
+    /* About Dream */
+    .about-dream-header {
+        font-size: 12px;
+        width: auto
+    }
+    .about-dream-span {
+        font-size: 19px;
+    }
+
+    .about-dream-paragraph {
+        font-size: 9px;
+        width: auto;
+        margin: 15px 0 0 0;
+    }
+
+    .header-dream-button {
+        margin: 20px 0 0 0;
+        width: 120px;
+        height: 20px;
+        padding: 5px 0 0 0;
+        border: 1px solid #bbbbbb;
+        border-radius: 1px;
+    }
+
+    .about-dream-image {
+        width: 30%;
+        margin: 0 0 75px 0;
+        padding-bottom: 0;
+    }
+
+    /* First Section */
+
+    /* Expectations */
+    .expectation-header {
+        font-size: 12px;
+        margin: 10px 0 0 0;
+    }
+
+    .expectation-paragraph {
+        margin-top: 5px;
+    }
+
+    /* Second Section */
+
+    .second-section-form-input {
+        width: 190px;
+        height: 25px;
+        font-size: 9px;
+        padding-left: 7px;
+    }
+    .form-button-submit {
+        width: 190px;
+        height: 25px;
+        font-size: 10px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Footer */
+    footer {
+        padding: 3px 0 3px 0;
+    }
+}
