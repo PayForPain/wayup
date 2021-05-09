@@ -25,11 +25,6 @@ p {
     margin: 0 auto;
 }
 
-/* P */
-p {
-    margin: 0;
-}
-
 /* Text Align */
 /* Center */
 .header-dream-button, .first-section-header, .second-section, .expectation, .second-section-header, .credits {
@@ -50,7 +45,7 @@ p {
 }
 
 /* Body */
-body {
+body, p {
     margin: 0;
     font-size: 15px;
 }
@@ -137,11 +132,12 @@ body {
 
 .expectation-header {
     font-size: 19px;
-    margin: 30px 0 0 0;
+    margin: 30px 0 10px 0;
 }
 .expectation-paragraph {
     font-weight: 400;
     font-family: 'Ubuntu', sans-serif;
+    margin-top: 15px;
 }
 
 /* Second Section */
@@ -207,10 +203,6 @@ footer {
     }
     .about-dream-span {
         font-size: 49px;
-    }
-
-    .about-dream-paragraph {
-        
     }
 
     .about-dream-image {
