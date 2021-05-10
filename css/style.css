@@ -365,12 +365,16 @@ footer {
     .expectation-header {
          font-size: 15px;
     }
-
+    
+    .expectation-paragraph {
+        margin-top: 5px;
+        font-size: 13px;
+    }
 
     /* Second Section */
 
     .second-section-header {
-        padding: 0 0 30px 0;
+        padding: 0 0 20px 0;
     }
 
     .second-section-form-input {
@@ -464,10 +468,14 @@ footer {
     }
 
     .expectation-paragraph {
-        margin-top: 5px;
+        margin-top: 4px;
+        font-size: 10px;
     }
 
     /* Second Section */
+    .second-section-header {
+        padding: 0;
+    }
 
     .second-section-form-input {
         width: 190px;
