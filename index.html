@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&family=Ubuntu:wght@700&display=swap">
 </head>
 <body>
     <!-- Header -->
@@ -21,7 +25,7 @@
             <!-- About Dream Container -->
             <div class="about-dream-container">
                 <!-- About Dream -->
-                <div id="about-dream" class="about-dream">
+                <div id="about-dream" class="about-dream animate__animated animate__bounce">
                     <h1 class="about-dream-header">С помощью верстки <br>я создам ту жизнь, о которой <span class="about-dream-span">мечтаю!</span></h1>
                     <p class="about-dream-paragraph">Мои стремления + настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на 100%. Меня не остановить!</p>
                     <a href="#" class="header-dream-button">Двигаться к мечте!</a>
@@ -64,9 +68,9 @@
             </section>
 
             <!-- Second Section -->
-            <section class="second-section">
+            <section class="second-section" id="second-section">
                 <div class="second-section-container">
-                    <h2 class="second-section-header">Форма заказа билета в будущее</h2>
+                    <h2 class="second-section-header animate__animated">Форма заказа билета в будущее</h2>
                     <form action="#" class="second-section-form">
                         <input type="text" name="name" placeholder="Имя" required class="second-section-form-input">
                         <input type="email" name="email" placeholder="E-mail" required class="second-section-form-input">
@@ -86,5 +90,7 @@
             <p class="credits">© Все мои мечты защищены моим трудолюбием</p>
         </div>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
